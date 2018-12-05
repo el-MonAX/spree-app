@@ -1,0 +1,4 @@
+/cookbooks/
+spree_dev_1.pem
+encrypted_data_bag_secret
+site-cookbooks/app-deploy/files/default

@@ -1,0 +1,27 @@
+{
+  "id": "dev",
+  "database": {
+    "encrypted_data": "yZgWToiP/mHgADyrU8has98gNXPtNPLKaJB6PX/TICSF3s4O+D7uv+sb/Yv/\n/a9HzmACAyUkgnEtUKqi1yxJthnvwny7pXoDcBc6pCQ7js69o3bFjaXQsWXH\ntTcuVVZ0\n",
+    "iv": "xMvBvyJ8odo99ua/u0xkgQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "postgresql": {
+    "encrypted_data": "Ef0x6AkKs7qCXPjQxEcfDeDUJqjTIRHawlKIplsUmzPyPRATKKrLT77Ri+4F\nXomh\n",
+    "iv": "DoCAnBwS7AzpAo+w5vkc2g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "application": {
+    "encrypted_data": "FwSnwGgEyFWHUYF6zybX+VHPW2zo7HDkQkE251rbxFk6Kack6bfAX1x29TFS\ni7Wmc1yVGAzxvCdOT4QSEtJJhhgzCKkx6o88iWzWdQMiYz1gbrrBiALhFamL\nLSUSFbfcZG+GNrWb3dfq6fjzt8Nl/VcWGU6AsOSL0NKCqImRBpHFpzFIGqLX\nteZZ6MBIpFpCvqovEwaV/7x75kewkxo/xQwjK77XQyhRluSZupnjdG3DUXGl\nEzDb6s2mrh6secP7N7dgWzN483xfc9yXMGPRQrlsIIe7EcE4G4m3lnGxZJ5m\nOmSKpAhOTsbg7fdtkrY22vioPgGVyDukOksZk3YfCyh1Yr6pDVY+3fxBA1WW\nOX6RinwMAzjhA8T333uM+fFP86ORcOcMtuuLFLT7qUs/uBt033uZpHl3eR2m\nIvEW/kzN1SIUChzLsAciEu7/UXjY\n",
+    "iv": "OEeg9Vx9zZXGRBYt3fPFBQ==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  },
+  "monit": {
+    "encrypted_data": "+ixn7b/U3tR/94Q5J3wi5q5WrozSp5XiHBr/j3jMQGrzRnp0O6K+VVsqM/4B\njrVDYdEEmNjf3YlNnGH4j22QOw==\n",
+    "iv": "wvvgYY0NkvoCmau6vD7U9g==\n",
+    "version": 1,
+    "cipher": "aes-256-cbc"
+  }
+}

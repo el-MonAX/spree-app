@@ -1,0 +1,14 @@
+{
+ "name": "spree-app",
+ "environment": "dev",
+ "run_list": [
+   "role[setup]",
+   "role[database]",
+   "role[web]",
+   "role[security]",
+   "role[deploy]"
+ ],
+ "automatic": {
+   "ipaddress": "18.184.123.183"
+ }
+}

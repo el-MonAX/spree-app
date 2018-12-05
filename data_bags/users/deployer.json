@@ -1,0 +1,10 @@
+{
+ "id": "deployer",
+ "password": "$1$pLkeCZ5O$zKvLFmXDtQhhB3Ur6ual71",
+ "ssh_keys": [
+   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1cRXj+mifvwX1hiw7NObKmjlnBfQvxPDDRuScDSuG9Bo6y32+e/kUGbg58XJ1sIAzD/CEMHTP+77ZyiJ0PkyJ54/w1QoYidwl167WLOYZ0zMANshfcUdH4nLxs2WBX4cxiKFsg2MMC2ZPnkv5f9YrX2LD8VD47Rpty29ZiioVsT9ZymYNppg1KW+Aa2ctGGRUIGIHqbthnRoZ0SSai1ucv4lQRbXl3n+RTQIevzrVRzwJwZOTqbl9m/XgK8xu4xcXweAbIICP3haskmqqO0nuRrla4LMQczIGUx5vgeRRddWo0ISdYLAB+d4c13GkjzBLNX8zSizy2HFsL6fMEUzZ maksym.mukhortov@rubygarage.org",
+   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1cRXj+mifvwX1hiw7NObKmjlnBfQvxPDDRuScDSuG9Bo6y32+e/kUGbg58XJ1sIAzD/CEMHTP+77ZyiJ0PkyJ54/w1QoYidwl167WLOYZ0zMANshfcUdH4nLxs2WBX4cxiKFsg2MMC2ZPnkv5f9YrX2LD8VD47Rpty29ZiioVsT9ZymYNppg1KW+Aa2ctGGRUIGIHqbthnRoZ0SSai1ucv4lQRbXl3n+RTQIevzrVRzwJwZOTqbl9m/XgK8xu4xcXweAbIICP3haskmqqO0nuRrla4LMQczIGUx5vgeRRddWo0ISdYLAB+d4c13GkjzBLNX8zSizy2HFsL6fMEUzZ maksym.mukhortov@rubygarage.org"
+ ],
+ "groups": ["sudo" ,"sysadmin", "www-data"],
+ "shell": "\/bin\/bash"
+}

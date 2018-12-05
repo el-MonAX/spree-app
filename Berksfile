@@ -1,0 +1,17 @@
+source 'https://api.berkshelf.com'
+
+cookbook 'chef_hostname', '~> 0.6.1'
+
+cookbook 'chef_rvm', '~> 2.0.0'
+cookbook 'imagemagick', '~> 0.2.3'
+cookbook 'monit', '~> 1.0.0'
+cookbook 'nginx', '~> 7.0.2'
+cookbook 'nodejs', '~> 5.0.0'
+cookbook 'openssh', '~> 2.6.1'
+cookbook 'postgresql_lwrp', '~> 1.2.1'
+cookbook 'locale', '~> 2.0.1'
+cookbook 'sudo', '~> 4.0.0'
+cookbook 'users', '~> 5.3.1'
+cookbook 'seven_zip', '= 2.0.2'
+cookbook 'redis', git: 'git://github.com/phlipper/chef-redis.git'
+cookbook 'yarn', '~> 0.4.2'

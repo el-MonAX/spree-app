@@ -1,0 +1,914 @@
+dell@dell-Inspiron-5558  ~/workspace/spree-app  knife solo bootstrap ubuntu@18.184.123.183 -i spree_dev_1.pem                                                                        ruby-2.3.7[1:13:55]
+Bootstrapping Chef...
+ % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                Dload  Upload   Total   Spent    Left  Speed
+100 23110  100 23110    0     0  17959      0  0:00:01  0:00:01 --:--:-- 17956
+ubuntu 16.04 x86_64
+Getting information for chef stable 12.22.5 for ubuntu...
+downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=12.22.5&p=ubuntu&pv=16.04&m=x86_64
+ to file /tmp/install.sh.31688/metadata.txt
+trying wget...
+sha1	fdfe0190f4246a5a1c5076cac6806f418c414755
+sha256	10531deefe1a46f300b5179887a1d27489f54418c08489b98d67618c2a54e6ce
+url	https://packages.chef.io/files/stable/chef/12.22.5/ubuntu/16.04/chef_12.22.5-1_amd64.deb
+version	12.22.5
+downloaded metadata file looks valid...
+downloading https://packages.chef.io/files/stable/chef/12.22.5/ubuntu/16.04/chef_12.22.5-1_amd64.deb
+ to file /tmp/install.sh.31688/chef_12.22.5-1_amd64.deb
+trying wget...
+Comparing checksum with sha256sum...
+Installing chef 12.22.5
+installing with dpkg...
+Selecting previously unselected package chef.
+(Reading database ... 76416 files and directories currently installed.)
+Preparing to unpack .../chef_12.22.5-1_amd64.deb ...
+Unpacking chef (12.22.5-1) ...
+Setting up chef (12.22.5-1) ...
+Thank you for installing Chef!
+Running Chef on 18.184.123.183...
+Installing Berkshelf cookbooks to 'cookbooks'...
+Resolving cookbook dependencies...
+Fetching 'redis' from git://github.com/phlipper/chef-redis.git (at master)
+Fetching cookbook index from https://api.berkshelf.com...
+Installing apt (7.1.1) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing ark (4.0.0) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing build-essential (8.2.1) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using chef_gem (0.1.0)
+Using chef_hostname (0.6.1)
+Using chef_rvm (2.0.0)
+Installing compat_resource (12.19.1) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing cron (6.2.1) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing curl (2.0.4) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing git (9.0.1) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing homebrew (5.0.8) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using imagemagick (0.2.3)
+Installing iptables (4.5.0) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing java (3.1.1) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using locale (2.0.1)
+Installing maven (5.2.0) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing mingw (2.1.0) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using monit (1.0.0)
+Using mono (0.1.2)
+Using nginx (7.0.2)
+Using nodejs (5.0.0)
+Installing ohai (5.2.5) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing openssh (2.6.3) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing poise (2.8.2) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using poise-archive (1.5.0)
+Installing poise-languages (2.1.2) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using poise-monit (1.6.0)
+Using poise-service (1.5.2)
+Installing postgresql_lwrp (1.2.4) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing python (1.4.6) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using redis (0.5.6) from git://github.com/phlipper/chef-redis.git (at master)
+Installing seven_zip (3.1.0) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Installing sudo (4.0.1) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using users (5.3.1)
+Installing windows (5.2.2) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using yum (5.1.0)
+Installing yum-epel (3.3.0) from https://api.berkshelf.com ([opscode] https://supermarket.chef.io:443/api/v1)
+Using zypper (0.4.0)
+Vendoring apt (7.1.1) to cookbooks/apt
+Vendoring ark (4.0.0) to cookbooks/ark
+Vendoring build-essential (8.2.1) to cookbooks/build-essential
+Vendoring chef_gem (0.1.0) to cookbooks/chef_gem
+Vendoring chef_hostname (0.6.1) to cookbooks/chef_hostname
+Vendoring chef_rvm (2.0.0) to cookbooks/chef_rvm
+Vendoring compat_resource (12.19.1) to cookbooks/compat_resource
+Vendoring cron (6.2.1) to cookbooks/cron
+Vendoring curl (2.0.4) to cookbooks/curl
+Vendoring git (9.0.1) to cookbooks/git
+Vendoring homebrew (5.0.8) to cookbooks/homebrew
+Vendoring imagemagick (0.2.3) to cookbooks/imagemagick
+Vendoring iptables (4.5.0) to cookbooks/iptables
+Vendoring java (3.1.1) to cookbooks/java
+Vendoring locale (2.0.1) to cookbooks/locale
+Vendoring maven (5.2.0) to cookbooks/maven
+Vendoring mingw (2.1.0) to cookbooks/mingw
+Vendoring monit (1.0.0) to cookbooks/monit
+Vendoring mono (0.1.2) to cookbooks/mono
+Vendoring nginx (7.0.2) to cookbooks/nginx
+Vendoring nodejs (5.0.0) to cookbooks/nodejs
+Vendoring ohai (5.2.5) to cookbooks/ohai
+Vendoring openssh (2.6.3) to cookbooks/openssh
+Vendoring poise (2.8.2) to cookbooks/poise
+Vendoring poise-archive (1.5.0) to cookbooks/poise-archive
+Vendoring poise-languages (2.1.2) to cookbooks/poise-languages
+Vendoring poise-monit (1.6.0) to cookbooks/poise-monit
+Vendoring poise-service (1.5.2) to cookbooks/poise-service
+Vendoring postgresql_lwrp (1.2.4) to cookbooks/postgresql_lwrp
+Vendoring python (1.4.6) to cookbooks/python
+Vendoring redis (0.5.6) to cookbooks/redis
+Vendoring seven_zip (3.1.0) to cookbooks/seven_zip
+Vendoring sudo (4.0.1) to cookbooks/sudo
+Vendoring users (5.3.1) to cookbooks/users
+Vendoring windows (5.2.2) to cookbooks/windows
+Vendoring yum (5.1.0) to cookbooks/yum
+Vendoring yum-epel (3.3.0) to cookbooks/yum-epel
+Vendoring zypper (0.4.0) to cookbooks/zypper
+Uploading the kitchen...
+Generating solo config...
+Running Chef: sudo chef-solo -c ~/chef-solo/solo.rb -j ~/chef-solo/dna.json
+[2018-11-24T23:16:02+00:00] INFO: Forking chef instance to converge...
+Starting Chef Client, version 12.22.5
+[2018-11-24T23:16:02+00:00] INFO: *** Chef 12.22.5 ***
+[2018-11-24T23:16:02+00:00] INFO: Platform: x86_64-linux
+[2018-11-24T23:16:02+00:00] INFO: Chef-client pid: 32211
+[2018-11-24T23:16:02+00:00] INFO: The plugin path /etc/chef/ohai/plugins does not exist. Skipping...
+[2018-11-24T23:16:03+00:00] INFO: Setting the run_list to ["role[setup]", "role[database]", "role[web]", "role[security]", "role[deploy]"] from CLI options
+[2018-11-24T23:16:03+00:00] INFO: Run List is [role[setup], role[database], role[web], role[security], role[deploy]]
+[2018-11-24T23:16:03+00:00] INFO: Run List expands to [app-hostname, app-users, app-sudo, app-postgresql, app-monit::postgresql, app-redis, app-ruby, app-nodejs, app-imagemagick, app-nginx, app-monit::redis, app-monit::nginx, app-monit::puma, app-openssh, app-deploy]
+[2018-11-24T23:16:03+00:00] INFO: Starting Chef Run for spree-app
+[2018-11-24T23:16:03+00:00] INFO: Running start handlers
+[2018-11-24T23:16:03+00:00] INFO: Start handlers complete.
+[2018-11-24T23:16:03+00:00] INFO: HTTP Request Returned 404 Not Found: Object not found:
+resolving cookbooks for run list: ["app-hostname", "app-users", "app-sudo", "app-postgresql", "app-monit::postgresql", "app-redis", "app-ruby", "app-nodejs", "app-imagemagick", "app-nginx", "app-monit::redis", "app-monit::nginx", "app-monit::puma", "app-openssh", "app-deploy"]
+[2018-11-24T23:16:05+00:00] INFO: Loading cookbooks [app-hostname@0.1.0, app-users@0.1.0, app-sudo@0.1.0, app-postgresql@0.1.0, app-monit@0.1.0, app-redis@0.1.0, app-ruby@0.1.0, app-nodejs@0.1.0, app-imagemagick@0.1.0, app-nginx@0.1.0, app-openssh@0.1.0, app-deploy@0.1.0, chef_hostname@0.6.1, users@5.3.1, app-attributes@0.0.0, sudo@4.0.1, apt@7.1.1, postgresql_lwrp@1.2.4, locale@2.0.1, monit@1.0.0, redis@0.5.6, chef_rvm@2.0.0, nodejs@5.0.0, imagemagick@0.2.3, nginx@7.0.2, openssh@2.6.3, python@1.4.6, cron@6.2.1, poise@2.8.2, poise-monit@1.6.0, build-essential@8.2.1, chef_gem@0.1.0, curl@2.0.4, ark@4.0.0, ohai@5.2.5, yum-epel@3.3.0, compat_resource@12.19.1, zypper@0.4.0, iptables@4.5.0, poise-languages@2.1.2, poise-service@1.5.2, seven_zip@3.1.0, mingw@2.1.0, poise-archive@1.5.0, windows@5.2.2]
+Synchronizing Cookbooks:
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-hostname/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-users/recipes/regular.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-sudo/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-users/recipes/system.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-users/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-sudo/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-users/attributes/system.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-hostname/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-postgresql/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-users/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-postgresql/metadata.rb in the cache.
+ - app-hostname (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/recipes/redis.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/templates/nginx.conf.erb in the cache.
+ - app-sudo (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/templates/postgresql.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/recipes/puma.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/recipes/postgresql.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/recipes/nginx.rb in the cache.
+ - app-users (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/templates/puma.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/templates/redis.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-monit/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-redis/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-redis/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-redis/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-ruby/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-ruby/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-ruby/recipes/gpg2.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-nodejs/recipes/default.rb in the cache.
+ [2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-ruby/recipes/setup.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-postgresql/attributes/default.rb in the cache.
+- app-monit (0.1.0)
+ - app-redis (0.1.0)
+ - app-ruby (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-nodejs/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-nodejs/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-imagemagick/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-imagemagick/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-nginx/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-nginx/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-openssh/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-openssh/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-nginx/templates/dev.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-nginx/metadata.rb in the cache.
+ - app-nodejs (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-openssh/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/files/default/key in the cache.
+ - app-imagemagick (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/files/default/key.pub in the cache.
+ - app-postgresql (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/templates/dev/database.yml.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/templates/dev/puma.rb.erb in the cache.
+ - app-nginx (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/templates/dev/sidekiq.yml.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/libraries/matchers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-deploy/metadata.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/resources/hostname.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/files/config.xml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/MAINTAINERS.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/CONTRIBUTING.md in the cache.
+ - app-openssh (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_hostname/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/resources/manage.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/libraries/helpers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/libraries/matchers.rb in the cache.
+ - app-deploy (0.1.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/templates/authorized_keys.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/templates/private_key.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/templates/public_key.pub.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/CHANGELOG.md in the cache.
+ - chef_hostname (0.6.1)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/recipes/sysadmins.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/resources/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/users/libraries/osx_helper.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/providers/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/app-attributes/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/templates/default/sudoer.erb in the cache.
+ - app-attributes (0.0.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/templates/default/sudoers.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/files/README in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/templates/mac_os_x/sudoers.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/CONTRIBUTING.md in the cache.
+ - users (5.3.1)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/recipes/cacher-client.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/.foodcritic in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/templates/01proxy.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/recipes/cacher-ng.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/templates/10recommends.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/recipes/unattended-upgrades.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/libraries/helpers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/files/15update-stamp in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/files/apt-proxy-v2.conf in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/templates/50unattended-upgrades.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/templates/10dpkg-options.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/sudo/attributes/default.rb in the cache.
+ - sudo (4.0.1)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/resources/cloud_backup.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/templates/acng.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/templates/unattended-upgrades.seed.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/apt/templates/20auto-upgrades.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/resources/database.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/providers/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/providers/extension.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/resources/extension.rb in the cache.
+ [2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/resources/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/resources/user.rb in the cache.
+- apt (7.1.1)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/resources/pgxn_extension.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/providers/cloud_backup.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/providers/database.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/providers/user.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/recipes/apt_official_repository.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/recipes/cloud_backup.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/libraries/helpers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/attributes/client.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/attributes/server.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/templates/default/pg_hba.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/providers/pgxn_extension.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/templates/default/postgresql_cloud_backup_helper.sh.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/libraries/matchers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/.kitchen.docker.yml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/attributes/cloud_backup.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/templates/default/postgresql.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/templates/default/pg_ident.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/MAINTAINERS in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/LICENSE in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/.kitchen.cloud.yml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/templates/default/recovery.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/chefignore in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/postgresql_lwrp/Gemfile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/libraries/locale.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/postfix.rb in the cache.
+ - postgresql_lwrp (1.2.4)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/postgresql.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/rabbitmq.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/resque.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/resque_scheduler.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/ssh.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/files/halite_gem/poise_monit_compat/cheftie.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/recipes/unicorn.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/files/halite_gem/poise_monit_compat/resources.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/locale/MAINTAINERS.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/libraries/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/templates/resque.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/files/halite_gem/poise_monit_compat.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/templates/unicorn.conf.erb in the cache.
+ - locale (2.0.1)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/files/halite_gem/poise_monit_compat/resources/monitrc.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/files/halite_gem/poise_monit_compat/version.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/templates/compat.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/monit/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/recipes/client.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/files/default/tests/minitest/default_test.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/files/default/tests/minitest/client_test.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/files/default/tests/minitest/test_helper.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/templates/default/default_redis-server.erb in the cache.
+ - monit (1.0.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/.rubocop.yml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/files/default/tests/minitest/server_test.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/recipes/server.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/.kitchen.yml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/templates/default/redis.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/.ruby-gemset in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/Berksfile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/.gitignore in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/LICENSE.txt in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/.ruby-version in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/Rakefile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/Guardfile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/Gemfile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/redis/.travis.yml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/resources/gem.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/resources/gemset.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/resources/ruby.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/aliases.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/resources/wrapper.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/gems.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/resources/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/packages.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/rubies.rb in the cache.
+ - redis (0.5.6)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/rvm.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/resources/alias.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/04_provider_rvm_bash.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/gemsets.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/cookbook.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/recipes/wrappers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/ruby_string.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/01_execute_ptovider_mixin.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/01_execute_resource_mixin.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/02_provider_rvm_execute.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/02_resource_rvm_execute.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/03_provider_rvm_script.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/03_resource_rvm_script.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/04_resource_rvm_bash.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_simple_environment.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/requirements.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_resource_helper.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_provider_mixin.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_simple_environment_alias.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_simple_environment_gem.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_simple_environment_gemset.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_simple_environment_ruby.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_simple_environment_wrapper.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/libraries/rvm_simple_environment_rvm.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/nodejs_from_binary.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/nodejs_from_package.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/templates/default/rvmrc.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/nodejs_from_source.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/chef_rvm/README.md in the cache.
+ - chef_rvm (2.0.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/repo.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/npm.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/resources/npm_package.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/install.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/npm_from_source.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/npm_packages.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/nodejs.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/attributes/npm.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/attributes/packages.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/attributes/repo.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/imagemagick/recipes/rmagick.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/imagemagick/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/recipes/iojs.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nodejs/libraries/nodejs_helper.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/imagemagick/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/imagemagick/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/resources/cleanup_runit.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/imagemagick/recipes/devel.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/resources/site.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/authorized_ips.rb in the cache.
+ - nodejs (5.0.0)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/commons.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/commons_conf.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/commons_dir.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/commons_script.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_echo_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/headers_more_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_geoip_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/imagemagick/metadata.json in the cache.
+ - imagemagick (0.2.3)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_realip_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_stub_status_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_spdy_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_ssl_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_auth_request_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_v2_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/ipv6.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_perl_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/ngx_devel_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/naxsi_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_mp4_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/http_gzip_static_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/ngx_lua_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/pagespeed_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/ohai_plugin.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/passenger.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/repo_passenger.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/repo.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/lua.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/set_misc.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/upload_progress_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/socketproxy.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/package.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/openssl_source.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/devel.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/libraries/helpers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/libraries/matchers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/libraries/nginx_version.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/auth_request.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/source.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/recipes/syslog_module.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/echo.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/headers_more.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/lua.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/pagespeed.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/status.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/passenger.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/syslog.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/rate_limiting.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/repo.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/set_misc.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/geoip.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/naxsi.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/socketproxy.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/source.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/openssl_source.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/files/naxsi_core.rules in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/authorized_ip.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/http_gzip_static.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/debian/nginx.init.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/default-site.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/passenger.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/files/mime.types in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/nginx.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/upload_progress.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/nginx-upstart.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/nginx_status.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/http_realip.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/nginx.init.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/attributes/upload_progress.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/nginx.service.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/socketproxy.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/sv-nginx-run.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/ubuntu/nginx.init.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/modules/http_geoip.conf.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/nginx.sysconfig.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/nxdissite.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/plugins/ohai-nginx.rb.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/nxensite.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/templates/default/sv-nginx-log-run.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/recipes/iptables.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/templates/default/ca_keys.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/libraries/helpers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/templates/default/port_ssh.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/templates/default/sshd_config.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/nginx/metadata.json in the cache.
+ - nginx (7.0.2)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/resources/pip.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/resources/virtualenv.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/templates/default/revoked_keys.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/templates/default/ssh_config.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/openssh/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/providers/virtualenv.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/recipes/virtualenv.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/recipes/package.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/recipes/pip.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/recipes/source.rb in the cache.
+ - openssh (2.6.3)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/providers/pip.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/libraries/matchers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/NOTICE.txt in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/Gemfile.lock in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/Berksfile.lock in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/Berksfile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/.kitchen.yml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/Rakefile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/ZPL.txt in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/TESTING.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/Gemfile in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/.travis.yml in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/.gitignore in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/LICENSE in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/resources/access.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/resources/d.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/libraries/helpers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/python/files/default/get-pip.py in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/templates/cron.d.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/templates/cron_manage.erb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/libraries/default.rb in the cache.
+ - python (1.4.6)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/backports.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/chefspec_matchers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/defined_in.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/fused.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/backports/not_passed.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/include_recipe.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/cron/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/backports/verify_path.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/inversion.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/inversion/options_resource.rb in the cache.
+ [2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/error.rb in the cache.
+- cron (6.2.1)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/lwrp_polyfill.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/inversion/options_provider.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources/container.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/notifying_block.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/option_collector.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources/default_containers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/resource_cloning.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/resource_name.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/lazy_default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/win32_user.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subcontext_block.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/resource.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources/child.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/resource_subclass.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/subresources.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers/template_content.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/provider.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/helpers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/subcontext/runner.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/utils/shell_out.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/subcontext.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/utils/win32.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/version.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/utils.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/README.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/CHANGELOG.md in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/metadata.json in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/utils/resource_provider_mixin.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise/files/halite_gem/poise/subcontext/resource_collection.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/cheftie.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/recipes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/libraries/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/error.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/monit_providers/base.rb in the cache.
+ [2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/attributes/default.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/monit_providers/system.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/monit_providers/binaries.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/monit_providers/dummy.rb in the cache.
+- poise (2.8.2)
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/monit_providers.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/resources/monit_check.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/resources/monit.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/resources/monit_config.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/resources/monit_service.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/resources/monit_test.rb in the cache.
+[2018-11-24T23:16:05+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/resources.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/version.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/service_providers/monit.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit/service_providers.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/files/halite_gem/poise_monit.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/templates/monit.conf.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/templates/monit_check.conf.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/templates/monit_service.conf.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/resources/build_essential.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/resources/xcode_command_line_tools.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/recipes/_windows.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-monit/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/chef_gem/recipes/default.rb in the cache.
+ - poise-monit (1.6.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/chef_gem/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/chef_gem/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/build-essential/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/curl/recipes/libcurl.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/curl/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/chef_gem/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/curl/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/curl/.foodcritic in the cache.
+ - build-essential (8.2.1)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/resources/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/chef_gem/libraries/chef_gem.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/platform_specific_builders.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/curl/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/general_owner.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/resource_defaults.rb in the cache.
+ - chef_gem (0.1.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/resource_deprecations.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/curl/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/sevenzip_command_builder.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/unzip_command_builder.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/windows_owner.rb in the cache.
+ [2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/libraries/tar_command_builder.rb in the cache.
+- curl (2.0.4)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/files/default/foo.zip in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/files/default/foo.tar.gz in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/files/default/foo.tbz in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/files/default/foo.tgz in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/files/default/foo.txz in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/files/default/foo_sub.tar.gz in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/files/default/foo_sub.zip in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/resources/plugin.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/templates/add_to_path.sh.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ark/.foodcritic in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/resources/hint.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/libraries/hint_helpers.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/recipes/default.rb in the cache.
+ - ark (4.0.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/ohai/libraries/plugin_helpers.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/attributes/epel-debuginfo.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/attributes/epel-source.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/attributes/epel-testing-debuginfo.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/attributes/epel-testing-source.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/attributes/epel.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/CHANGELOG.md in the cache.
+ - ohai (5.2.5)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/attributes/epel-testing.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/yum-epel/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/libraries/autoload.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/constants.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/delayed_evaluator.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/dsl/declare_resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/dsl/recipe.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/dsl/platform_introspection.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/mixin/lazy_module_include.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/dsl/universal.rb in the cache.
+ [2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/dsl/core.rb in the cache.
+- yum-epel (3.3.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/mixin/params_validate.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/mixin/powershell_out.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/mixin/properties.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/property.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/provider/noop.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/provider/apt_repository.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/provider/support/yum_repo.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/provider/yum_repository.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/provider.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/resource/action_class.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/resource/apt_repository.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/resource/apt_update.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/mixin/notifying_block.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/resource/systemd_unit.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/resource/yum_repository.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/provider/apt_update.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/provider/systemd_unit.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/resource_builder.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/log.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/mixin/params_validate.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/node.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/mixin/properties.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/exceptions.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/recipe_hook.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/provider.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/resource_collection/resource_set.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/resource/lwrp_base.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/resource_builder.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/property.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/copied_from_chef/chef/resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/recipe.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/run_context.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/resource_collection/resource_list.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/resource_collection.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/recipe.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/resource/lwrp_base.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/property.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/resources/repo.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/providers/repo.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/compat_resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/MAINTAINERS.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_upstream_version.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/compat_resource/files/lib/chef_compat/monkeypatches/chef/runner.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/recipes/smt_client.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/resources/rule.rb in the cache.
+ - compat_resource (12.19.1)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/resources/rule6.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/recipes/_package.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/recipes/disabled.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/templates/default/iptables_load.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/templates/default/rebuild-iptables.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/zypper/libraries/matchers.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/attributes/default.rb in the cache.
+ - zypper (0.4.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/command/mixin.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/scl/mixin.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/command.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/iptables/templates/default/iptables-config.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/scl.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/static/mixin.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/scl/resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/libraries/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/error.rb in the cache.
+ - iptables (4.5.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/system/mixin.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/system/resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/system.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/utils/which.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/utils.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/version.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/static/resource.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/files/halite_gem/poise_languages/static.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/libraries/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/error.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources/poise_service_user.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources/poise_service.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_mixin.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/inittab.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-languages/README.md in the cache.
+ [2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/resources/poise_service_test.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/systemd.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/cheftie.rb in the cache.
+- poise-languages (2.1.2)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/sysvinit.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/upstart.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/version.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/utils.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/dummy.json.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/base.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/systemd.service.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/sysvinit.sh.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/files/halite_gem/poise_service/service_providers/dummy.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/resources/archive.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/inittab.sh.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-service/templates/default/upstart.conf.erb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/libraries/matchers.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/Gemfile.lock in the cache.
+ - poise-service (1.5.2)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/appveyor.yml in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/providers/archive.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/chefignore in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/rakefile.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/Gemfile in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/LICENSE in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/resources/get.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/resources/msys2_package.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/resources/tdm_gcc.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/files/default/bash.bat in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/seven_zip/resources/tool.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/files/default/custom_prefix.sh in the cache.
+ [2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/libraries/_helper.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/files/default/custom-upgrade.sh in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/files/default/pthread.h in the cache.
+- seven_zip (3.1.0)[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/files/default/time.h in the cache.
+
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/mingw/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/libraries/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/attributes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/archive_providers/base.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/archive_providers/seven_zip.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/archive_providers/zip.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/archive_providers.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/bzip2/constants.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/bzip2/LICENSE in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/bzip2/crc.rb in the cache.
+ - mingw (2.1.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/bzip2/decompressor.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/archive_providers/gnu_tar.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/archive_providers/tar.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/bzip2/input_data.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/bzip2/output_data.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/bzip2.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/cheftie.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/resources.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/version.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/README.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/dns.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/auto_run.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/certificate.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/feature.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/poise-archive/files/halite_gem/poise_archive/resources/poise_archive.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/feature_dism.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/font.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/feature_powershell.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/http_acl.rb in the cache.
+ - poise-archive (1.5.0)
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/certificate_binding.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/pagefile.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/printer.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/printer_port.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/shortcut.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/user_privilege.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/providers/dns.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/zipfile.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/recipes/default.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/libraries/powershell_helper.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/resources/share.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/libraries/wmi_helper.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/libraries/version.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/libraries/version_helper.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/CONTRIBUTING.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/libraries/registry_helper.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/metadata.json in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/libraries/windows_helper.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/libraries/windows_privileged.rb in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/CHANGELOG.md in the cache.
+[2018-11-24T23:16:06+00:00] INFO: Storing updated cookbooks/windows/README.md in the cache.
+ - windows (5.2.2)
+
+Running handlers:
+[2018-11-24T23:16:06+00:00] ERROR: Running exception handlers
+Running handlers complete
+[2018-11-24T23:16:06+00:00] ERROR: Exception handlers complete
+Chef Client failed. 0 resources updated in 04 seconds
+[2018-11-24T23:16:06+00:00] FATAL: Stacktrace dumped to /home/ubuntu/chef-solo/local-mode-cache/cache/chef-stacktrace.out
+[2018-11-24T23:16:06+00:00] FATAL: Please provide the contents of the stacktrace.out file if you file a bug report
+[2018-11-24T23:16:06+00:00] ERROR: Cookbook 'seven_zip' version '3.1.0' depends on chef version [">= 13.0"], but the running chef version is 12.22.5
+[2018-11-24T23:16:06+00:00] FATAL: Chef::Exceptions::ChildConvergeError: Chef run process exited unsuccessfully (exit code 1)
+ERROR: RuntimeError: chef-solo failed. See output above.
